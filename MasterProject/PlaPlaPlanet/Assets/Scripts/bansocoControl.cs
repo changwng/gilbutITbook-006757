@@ -11,7 +11,7 @@ public class bansocoControl : MonoBehaviour {
 
 	public void getoff(){
 		gameObject.AddComponent<Rigidbody>(); // 형지정--.
-		gameObject.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+		gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 		this.gameObject.transform.parent = null;
 	}
 

@@ -292,7 +292,7 @@ public class PlayerControl : MonoBehaviour {
 		}
 
 		// 멋대로 빙글빙들 돌지 않도록 회전 속도를 강제로 0으로 한다.
-		this.rigidbody.angularVelocity = Vector3.zero;
+		this.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 	}
 
 
